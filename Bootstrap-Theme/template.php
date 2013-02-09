@@ -17,7 +17,7 @@
 		<link href="<?php get_theme_url(); ?>/css/bootstrap.min.css" rel="stylesheet" media="screen">
 	</head>
 
-	<body>
+	<body id="<?php get_page_slug(); ?>">
 		<!-- Navigation bar -->
 		<div class="navbar">
 			<div class="navbar-inner">

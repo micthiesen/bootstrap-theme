@@ -1,6 +1,6 @@
 <?php if(!defined('IN_GS')){ die('you cannot load this page directly.'); }
 // A simple Bootstrap theme for GetSimple CMS by Michael Thiesen
-// Version: 0.1
+// Version: 0.2
 ?>
 
 <!DOCTYPE html>
@@ -8,15 +8,17 @@
 	<head>
 		<meta charset="utf-8">
 		<title><?php get_page_clean_title(); ?> &lt; <?php get_site_name(); ?></title>
-		<?php get_header(); ?>
 		<meta name="robots" content="index, follow" />
+		
+		<!-- Header -->
+		<?php get_header(); ?>
 
 		<!-- Styles -->
 		<link href="<?php get_theme_url(); ?>/css/bootstrap.min.css" rel="stylesheet" media="screen">
 	</head>
 
 	<body>
-		<!-- Navbar -->
+		<!-- Navigation bar -->
 		<div class="navbar">
 			<div class="navbar-inner">
 				<a class="brand" href="<?php get_site_url(); ?>"><?php get_site_name(); ?></a>
@@ -32,6 +34,7 @@
 				<!-- Content -->
 				<div class="span8">
 					<h1><?php get_page_title(); ?></h1>
+					<hr>
 					<?php get_page_content(); ?>
 				</div>
 
@@ -47,6 +50,9 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- Footer -->
+		<?php get_footer(); ?>
 
 		<!-- Javascript -->
 		<script src="http://code.jquery.com/jquery.js"></script>

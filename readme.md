@@ -8,7 +8,3 @@ Copy the `Bootstrap-Theme` folder into your `/path/to/getsimple/theme/` folder. 
 
 ## Example
 My personal site currently uses this theme. [Check it out](http://www.ugrad.cs.ubc.ca/~k5r8/).
-
----
-
-Here is the place to discuss anything related to Bootstrap Theme. Comments and questions are welcome!

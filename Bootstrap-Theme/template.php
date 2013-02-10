@@ -1,12 +1,14 @@
 <?php if(!defined('IN_GS')){ die('you cannot load this page directly.'); }
 // A simple Bootstrap theme for GetSimple CMS by Michael Thiesen
-// Version: 0.2
+// Version: 0.3
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
 		<title><?php get_page_clean_title(); ?> &lt; <?php get_site_name(); ?></title>
 		<meta name="robots" content="index, follow" />
 		

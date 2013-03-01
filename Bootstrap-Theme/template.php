@@ -19,18 +19,24 @@
 
 		<!-- Styles -->
 		<link href="<?php get_theme_url(); ?>/css/bootstrap.min.css" rel="stylesheet" media="screen">
-		<link href="<?php get_theme_url(); ?>/css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="<?php get_theme_url(); ?>/css/bootstrap-responsive.min.css" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Fix navbar overlap -->
+		<style media="screen" type="text/css">
+			@media (min-width: 980px) { body { padding-top: 60px; } }
+		</style>
 	</head>
 
 	<body id="<?php get_page_slug(); ?>">
 		<!-- Navigation bar -->
-		<div class="navbar">
+		<div class="navbar navbar-inverse navbar-fixed-top">
 			<div class="navbar-inner">
-				<a class="brand" href="<?php get_site_url(); ?>"><?php get_site_name(); ?></a>
-				<ul class="nav">
-					<?php get_navigation(return_page_slug()); ?>
-				</ul>
+				<div class="container-fluid">
+					<a class="brand" href="<?php get_site_url(); ?>"><?php get_site_name(); ?></a>
+					<ul class="nav">
+						<?php get_navigation(return_page_slug()); ?>
+					</ul>
+				</div>
 			</div>
 		</div>
 

@@ -7,16 +7,20 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
 		<title><?php get_page_clean_title(); ?> &lt; <?php get_site_name(); ?></title>
 		<meta name="robots" content="index, follow" />
+
+		<!-- Favicon: If your favicon is a PNG image, change 'x-icon' to 'png'
+		              and 'favicon.ico' to 'favicon.png' -->
+		<link rel="icon" type="image/x-icon" href="<?php get_site_url(); ?>/favicon.ico">
 		
 		<!-- Header -->
 		<?php get_header(); ?>
 
 		<!-- Styles -->
 		<link href="<?php get_theme_url(); ?>/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="<?php get_theme_url(); ?>/css/bootstrap-responsive.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
 	<body id="<?php get_page_slug(); ?>">
@@ -38,17 +42,20 @@
 					<h1><?php get_page_title(); ?></h1>
 					<hr>
 					<?php get_page_content(); ?>
+					<br>
 				</div>
 
 				<!-- Sidebar -->
 				<div class="span4">
-					<?php get_component('sidebar');	?>
-					<br>
-					<p class="muted credit">
-						Bootstrap Theme by <a href="http://www.ugrad.cs.ubc.ca/~k5r8/">Michael</a>
+					<div class="sidebar-nav well">
+						<?php get_component('sidebar');	?>
 						<br>
-						<?php get_site_credits(); ?>
-					</p>
+						<p class="muted credit">
+							Bootstrap Theme by <a href="http://www.ugrad.cs.ubc.ca/~k5r8/">Michael</a>
+							<br>
+							<?php get_site_credits(); ?>
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>

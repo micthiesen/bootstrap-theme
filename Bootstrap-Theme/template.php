@@ -9,6 +9,7 @@
 		<meta charset="utf-8">
 		<title><?php get_page_clean_title(); ?> &lt; <?php get_site_name(); ?></title>
 		<meta name="robots" content="index, follow" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- Favicon: If your favicon is a PNG image, change 'x-icon' to 'png'
 		              and 'favicon.ico' to 'favicon.png' -->
@@ -20,33 +21,28 @@
 		<!-- Styles -->
 		<link href="<?php get_theme_url(); ?>/css/bootstrap.min.css" rel="stylesheet" media="screen">
 		<link href="<?php get_theme_url(); ?>/css/bootstrap-responsive.min.css" rel="stylesheet">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- Fix navbar overlap -->
-		<style media="screen" type="text/css">
-			@media (min-width: 980px) { body { padding-top: 60px; } }
-		</style>
 	</head>
 
 	<body id="<?php get_page_slug(); ?>">
 		<!-- Navigation bar -->
-		<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar navbar-static-top navbar-inverse">
 			<div class="navbar-inner">
-				<div class="container-fluid">
-					<a class="brand" href="<?php get_site_url(); ?>"><?php get_site_name(); ?></a>
-					<ul class="nav">
-						<?php get_navigation(return_page_slug()); ?>
-					</ul>
-				</div>
+				<a class="brand" href="<?php get_site_url(); ?>"><?php get_site_name(); ?></a>
+				<ul class="nav">
+					<?php get_navigation(return_page_slug()); ?>
+				</ul>
+				<a class="navbar-text pull-right" href="<?php get_site_url(); ?>admin/">Admin</a>
 			</div>
 		</div>
 
 		<!-- Content and sidebar -->
-		<div class="container-fluid">
+		<div class="container-fluid" style="padding-top: 20px;">
 			<div class="row-fluid">
 				<!-- Content -->
 				<div class="span8">
-					<h1><?php get_page_title(); ?></h1>
-					<hr>
+					<div class="page-header">
+						<h1><?php get_page_title(); ?></h1>
+					</div>
 					<?php get_page_content(); ?>
 					<br>
 				</div>

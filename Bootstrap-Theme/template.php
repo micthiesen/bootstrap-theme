@@ -48,8 +48,8 @@
 				</div>
 
 				<!-- Sidebar -->
-				<div class="span4">
-					<div class="sidebar-nav well">
+				<div class="span4 well">
+					<div class="sidebar-nav">
 						<?php get_component('sidebar');	?>
 						<br>
 						<p class="muted credit">

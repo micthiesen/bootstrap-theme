@@ -48,11 +48,11 @@
 				</div>
 
 				<!-- Sidebar -->
-				<div class="span4 well">
-					<div class="sidebar-nav">
+				<div class="span4">
+					<div class="sidebar-nav well">
 						<?php get_component('sidebar');	?>
 						<br>
-						<p class="muted credit">
+						<p class="muted credit text-center">
 							Bootstrap Theme by <a href="http://www.ugrad.cs.ubc.ca/~k5r8/">Michael</a>
 							<br>
 							<?php get_site_credits(); ?>

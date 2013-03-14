@@ -1,3 +1,6 @@
+# this makefile packages all the required files for the theme into a zip file ready for
+# distribution on Extend
+
 # the files to be included in the zip file
 files =	Bootstrap-Theme/template.php Bootstrap-Theme/css/bootstrap-responsive.min.css \
 		Bootstrap-Theme/css/bootstrap.min.css \

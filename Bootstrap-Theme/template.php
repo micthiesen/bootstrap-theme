@@ -1,7 +1,5 @@
-<?php if(!defined('IN_GS')){ die('you cannot load this page directly.'); }
-// A simple Bootstrap theme for GetSimple CMS by Michael Thiesen
-// Version: 0.3
-?>
+<!-- A simple Bootstrap theme for GetSimple CMS by Michael Thiesen -->
+<?php if(!defined('IN_GS')){ die('you cannot load this page directly.'); } ?>
 
 <!DOCTYPE html>
 <html lang="en">

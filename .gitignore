@@ -1,2 +1,5 @@
 # OS X
 .DS_Store
+
+# make
+bootstrap-theme-*.zip

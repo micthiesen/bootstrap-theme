@@ -9,8 +9,7 @@
 		<meta name="robots" content="index, follow" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<!-- Favicon: If your favicon is a PNG image, change 'x-icon' to 'png'
-		              and 'favicon.ico' to 'favicon.png' -->
+		<!-- Favicon -->
 		<link rel="icon" type="image/x-icon" href="<?php get_site_url(); ?>/favicon.ico">
 		
 		<!-- Header -->
@@ -25,11 +24,22 @@
 		<!-- Navigation bar -->
 		<div class="navbar navbar-static-top navbar-inverse">
 			<div class="navbar-inner">
+				<!-- Collapse button -->
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>					
+				</a>
+				
+				<!-- Always shown -->
 				<a class="brand" href="<?php get_site_url(); ?>"><?php get_site_name(); ?></a>
-				<ul class="nav">
+				
+				<!-- Hidden when width < 800px -->
+				<div class="nav-collapse collapse">
+					<ul class="nav">
 					<?php get_navigation(return_page_slug()); ?>
-				</ul>
-				<a class="navbar-text pull-right" href="<?php get_site_url(); ?>admin/">Admin</a>
+					</ul>
+				</div>
 			</div>
 		</div>
 

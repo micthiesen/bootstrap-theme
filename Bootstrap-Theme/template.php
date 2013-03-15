@@ -34,7 +34,7 @@
 				<!-- Always shown -->
 				<a class="brand" href="<?php get_site_url(); ?>"><?php get_site_name(); ?></a>
 				
-				<!-- Hidden when width < 800px -->
+				<!-- Hidden when width too small -->
 				<div class="nav-collapse collapse">
 					<ul class="nav">
 					<?php get_navigation(return_page_slug()); ?>

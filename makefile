@@ -3,19 +3,19 @@
 
 # the files to be included in the zip file
 FILES =	Bootstrap-Theme/template.php Bootstrap-Theme/css/bootstrap-responsive.min.css \
-		Bootstrap-Theme/css/*/*.min.css \
-		Bootstrap-Theme/img/*.png Bootstrap-Theme/js/bootstrap.min.js \
+		Bootstrap-Theme/css/bootstrap.min.css \
+		Bootstrap-Theme/img/glyphicons-halflings-white.png \
+		Bootstrap-Theme/img/glyphicons-halflings.png Bootstrap-Theme/js/bootstrap.min.js \
 		images/screenshot.png readme.md
-
 
 # the server to update the files on (change this if you want to use update)
 SERVER = k5r8@remote.ugrad.cs.ubc.ca:~/public_html/
 
 # the current version of the theme
-VERSION = 0.5
+VERSION = 0.4
 
 # make the zip file
-bootstrap-theme-$(VERSION).zip: $(FILES)
+bootstrap-theme-$(VERSION).zip:
 	zip -9 -X bootstrap-theme-$(version).zip $(FILES)
 
 # clean up the zip file

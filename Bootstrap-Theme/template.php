@@ -1,8 +1,6 @@
 <!-- A simple Bootstrap theme for GetSimple CMS by Michael Thiesen -->
 <?php if(!defined('IN_GS')){ die('you cannot load this page directly.'); } ?>
 
-<?php $theme="default"; ?>
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -18,7 +16,7 @@
 		<?php get_header(); ?>
 
 		<!-- Styles -->
-		<link href="<?php get_theme_url(); ?>/css/<?php echo "$theme" ?>/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="<?php get_theme_url(); ?>/css/bootstrap.min.css" rel="stylesheet" media="screen">
 		<link href="<?php get_theme_url(); ?>/css/bootstrap-responsive.min.css" rel="stylesheet">
 	</head>
 

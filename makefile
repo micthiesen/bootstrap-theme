@@ -2,10 +2,13 @@
 # distribution on Extend
 
 # the files to be included in the zip file
-FILES =	Bootstrap-Theme/template.php Bootstrap-Theme/css/bootstrap-responsive.min.css \
+FILES =	Bootstrap-Theme/template.php Bootstrap-Theme/css/bootstrap-theme.min.css \
 		Bootstrap-Theme/css/bootstrap.min.css \
-		Bootstrap-Theme/img/glyphicons-halflings-white.png \
-		Bootstrap-Theme/img/glyphicons-halflings.png Bootstrap-Theme/js/bootstrap.min.js \
+		Bootstrap-Theme/fonts/glyphicons-halflings-regular.eot \
+		Bootstrap-Theme/fonts/glyphicons-halflings-regular.svg \
+		Bootstrap-Theme/fonts/glyphicons-halflings-regular.ttf \
+		Bootstrap-Theme/fonts/glyphicons-halflings-regular.woff \
+		Bootstrap-Theme/js/bootstrap.min.js \
 		images/screenshot.png readme.md
 
 # the server to update the files on (change this if you want to use update)
@@ -16,7 +19,7 @@ VERSION = 1.0
 
 # make the zip file
 bootstrap-theme-$(VERSION).zip:
-	zip -9 -X bootstrap-theme-$(version).zip $(FILES)
+	zip -9 -X bootstrap-theme-$(VERSION).zip $(FILES)
 
 # clean up the zip file
 clean:

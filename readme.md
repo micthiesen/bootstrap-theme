@@ -1,5 +1,5 @@
 # Bootstrap Theme
-Bootstrap Theme is a simple [GetSimple CMS](http://get-simple.info/) theme based on [Bootstrap](http://twitter.github.com/bootstrap/).
+Bootstrap Theme is a simple [GetSimple CMS](http://get-simple.info/) theme based on [Bootstrap](http://getbootstrap.com/) (currently version 3).
 
 It aims to be *easily extended* and *extremely minimalistic*.
 

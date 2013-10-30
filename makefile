@@ -12,7 +12,7 @@ FILES =	Bootstrap-Theme/template.php Bootstrap-Theme/css/bootstrap-responsive.mi
 SERVER = k5r8@remote.ugrad.cs.ubc.ca:~/public_html/
 
 # the current version of the theme
-VERSION = 0.4
+VERSION = 1.0
 
 # make the zip file
 bootstrap-theme-$(VERSION).zip:
@@ -25,5 +25,6 @@ clean:
 # update the theme on a server
 update:
 	rsync -rvp --del --include "*/" --include "*.min.*" \
-	--include "*.png" --include "*.php" --exclude "*" \
+	--include "*.png" --include "*.php" --include "*.svg" \
+	--include "*.woff" --include "*.ttf" --exclude "*" \
 	Bootstrap-Theme/ $(SERVER)theme/Bootstrap-Theme/

@@ -15,7 +15,7 @@ FILES =	Bootstrap-Theme/template.php Bootstrap-Theme/css/bootstrap-theme.min.css
 SERVER = k5r8@remote.ugrad.cs.ubc.ca:~/public_html/
 
 # the current version of the theme
-VERSION = 1.1
+VERSION = 1.2
 
 # make the zip file
 bootstrap-theme-$(VERSION).zip:

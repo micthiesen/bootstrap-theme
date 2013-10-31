@@ -22,7 +22,7 @@
 
 	<body id="<?php get_page_slug(); ?>">
 		<!-- Navigation bar -->
-		<nav class="navbar navbar-static-top navbar-inverse" role="navigation">
+		<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
 			<div class="navbar-header">
 				<!-- Collapse button -->
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
@@ -31,7 +31,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>					
 				</button>
-				<a class="navbar-brand" href="<?php get_site_url(); ?>"><?php get_site_name(); ?></a>
+				<p class="navbar-brand" style="padding-bottom: 0px;"><?php get_site_name(); ?></a>
 			</div>
 			
 			<!-- Hidden when width too small -->

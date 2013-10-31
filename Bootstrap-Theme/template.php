@@ -31,7 +31,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>					
 				</button>
-				<p class="navbar-brand" style="padding-bottom: 0px;"><?php get_site_name(); ?></a>
+				<a class="navbar-brand" href="<?php get_site_url(); ?>" style="padding-bottom: 0px;"><?php get_site_name(); ?></a>
 			</div>
 			
 			<!-- Hidden when width too small -->

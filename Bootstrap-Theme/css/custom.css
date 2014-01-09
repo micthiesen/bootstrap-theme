@@ -1,0 +1,25 @@
+/*!
+ * Some custom CSS for Bootstrap Theme!
+ * Feel free to modify this file however you like. Rules in this file will
+ * overried ones in bootstrap.min.css (this one is loaded after)
+ */
+
+/*
+ * This is a wrapper to make YouTube videos (and other stuff) responsive
+ * Credit: http://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
+ *         http://alistapart.com/article/creating-intrinsic-ratios-for-video
+ */
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

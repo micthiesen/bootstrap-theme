@@ -17,7 +17,7 @@
 
 		<!-- Styles -->
 		<link href="<?php get_theme_url(); ?>/css/bootstrap.min.css" rel="stylesheet" media="screen">
-		<link href="<?php get_theme_url(); ?>/css/bootstrap-theme.min.css" rel="stylesheet">
+		<link href="<?php get_theme_url(); ?>/css/custom.css" rel="stylesheet">
 	</head>
 
 	<body id="<?php get_page_slug(); ?>">
